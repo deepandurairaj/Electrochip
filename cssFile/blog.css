@@ -213,6 +213,30 @@ footer .copy{
     #check:checked~.navLinks{
         display: flex;
     }
+
+
+ /* blog section */
+    .blogSection {
+        margin: 0 0 0 0; 
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .blogSection .blogContainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 2rem;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0 40px;
+    }
+    .blogSection .blogContainer .box{
+        aspect-ratio: 16/9;
+        width: 100%;
+        margin: 0;
+        padding: 0 ;
+    }
+    
      /* footer */
     footer .socialMedia{
         width: 100%;
