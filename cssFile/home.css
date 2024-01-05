@@ -268,7 +268,7 @@ header .navLinks a:active{
 .blogSection{
     display: flex;
     flex-direction: column;
-    padding: 0 100px 200px 100px;
+    padding: 0px 200px 200px 200px;
 }
 .blogSection .title{
     display: flex;
@@ -547,20 +547,39 @@ footer .copy{
         margin: 235px 0 0 217px;
         width: 200px;
     }
+
+    /* blog section */
+    .blogSection {
+        margin: 0 10px 0 ; 
+        padding: 0 0;
+        width: 100%;
+    }
+    .blogSection .blogContainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 2rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+
     /* -----------------Contact Section--------------- */
     .contactSection .contact{
+        margin-top: 50px;
         flex-direction: column;
     }
 
     .contactSection .contact .forms{
         width: 100%;
         margin: 0;
-        padding-left: 20px;
+        padding-left: 10px;
     }
-
+    .contactSection .contact .forms form{
+        width: 100%;
+    }
     .contactSection .contact .mapArea{
         width: 100%;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     .contactSection .contact .mapArea iframe{
         width: 95%;
