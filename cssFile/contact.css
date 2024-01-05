@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #eae6f5;
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+}
+header .logoSection{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+header .logoSection img{
+    width: 36px;
+}
+header .logoSection p{
+    color: #4B208C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+header .navLinks{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+header .navLinks li{
+    list-style-type: none;
+}
+header .navLinks a{
+    color: #081016;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+header .navLinks a:hover{
+    background-color: #4B208C;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+#check{
+    display: none;
+}
+.checkBtn{
+    display: none;
+}
+/* --------------------------Contact Us--------------------------------------------------------------------------------- */
+.contactSection{
+    margin-bottom: 100px;
+}
+.contactSection .contact{
+    display: flex;
+}
+.contactSection .contact .forms{
+    width: 50%;
+    margin-left: 20px;
+}
+.contactSection .contact .forms .title{
+    display: flex;
+    margin: 0 0 30px 0;
+}
+.contactSection .contact .forms form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 50px 0 50px 0;
+}
+.contactSection .contact .forms form input{
+    border: none;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+}
+.contactSection .contact .forms form input:focus{
+    outline: none;
+    border: none;
+}
+.contactSection .contact .forms form .texts{
+    height: 55px;
+}
+.contactSection .contact .forms form .message{
+    height: 130px;
+}
+
+.contactSection .contact .forms button{
+    background-color: #4b208c;
+    border: 1px solid #4B208C;
+    color: #FFFFFF;
+    height: 45px;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.contactSection .contact .forms button :hover{
+    background-color: #5625a1;
+    cursor: pointer;
+}
+.contactSection .mapArea{
+    margin-top: 80px;
+}
+/* -----------------------------------------footer ----------------------------------------------- */
+footer .socialMedia{
+    background-color: #190734;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 150px;
+}
+footer .socialMedia .info{
+    display: flex;
+    color: #ececec;
+    font-size: 20px;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+footer .socialMedia .info .location{
+    display: flex;
+}
+footer .socialMedia .info p{
+    margin-left: 20px;
+}
+footer .socialMedia .info i{
+    display: flex;
+    align-items: center;
+}
+footer .socialMedia .info .phone{
+    display: flex;
+}
+footer .socialMedia .info .mail{
+    display: flex;
+}
+footer .socialMedia .media{
+    display: flex;
+    justify-content: space-between;
+}
+footer .socialMedia .media .forms{
+    display: flex;
+}
+footer .socialMedia .media .forms form input{
+    height: 45px;
+    width: 500px;
+}
+footer .socialMedia .media .forms  button{
+    background-color: #4b208c;
+    color: #FFFFFF;
+    font-size: 19px;
+    height: 45px;
+    width: 200px;
+    border: 1px solid #4B208C;
+}
+footer .socialMedia .media .forms  button:hover{
+    background-color: #5625a1;
+    cursor: pointer;
+}
+footer .socialMedia .media  .mediaAcnt{
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+}
+footer .socialMedia .media .mediaAcnt li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+footer .socialMedia .media .mediaAcnt a{
+    background-color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 50%;
+}
+footer .socialMedia .media .mediaAcnt i{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color:  #190734;
+}
+
+footer .copy{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media(max-width:576px) 
+{
+    header{
+        width: 100%;
+    }
+
+    header .navLinks{
+        width: 100%;
+        background-color:  #eae6f5;
+        flex-direction: column;
+        position: absolute;
+        top:80px;
+        display: none;
+    }
+    header .navLinks li{
+        margin-bottom: 10px;
+    }
+    .checkBtn{
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        font-size: 30px;
+        color: #4B208C;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+
+     /* -----------------Contact Section--------------- */
+     .contactSection .contact{
+        flex-direction: column;
+    }
+
+    .contactSection .contact .forms{
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .contactSection .contact .mapArea{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .contactSection .contact .mapArea iframe{
+        width: 95%;
+    }
+
+
+
+    /* footer */
+    footer .socialMedia{
+        width: 100%;
+        margin: 0;
+        padding: 50px 0;
+    }
+    footer .socialMedia .info{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    footer .socialMedia{
+        width: 100%;
+    }
+    footer .socialMedia .media {
+        width: 90%;
+        flex-direction: column;
+    }
+    footer .socialMedia .media .forms{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .socialMedia .media .forms form input{
+        width: 400px;
+        margin-bottom: 15px;
+    }
+    footer .socialMedia .mediaAcnt{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    footer .copy{
+        width: 100%;
+    }
+}
